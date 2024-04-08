@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/html5reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/nav.js" defer></script>
+    <script src="js/slider.js" defer></script>
+
+    <!--<script type="text/javascript">
+        function displayInformation () {
+            // Your code goes here. 
+            // Do not change any other code in this file
+            // All of the steps below must be achieved using JavaScript!
+    
+            
+            // 1. Change the h1 element to your name.
+            document.querySelector('h1').innerHTML = "Jessica's Pet Gallery";
+               
+            // 2. Update the three span elements using ONLY JavaScript
+            //document.querySelector('#URL').innerHTML = document.URL;
+            document.getElementById('URL').innerHTML = document.URL;
+            document.querySelector('#time').innerHTML = new Date();
+            document.querySelector('#items').innerHTML = document.querySelectorAll('h2').length;
+
+            // 3. Change the background color and margin for the entire page.
+            document.body.style.backgroundColor = 'yellow';
+                
+        }
+    
+        // 4. If someone uses the keyboard shortcut to copy the words "Thank you for visiting!" then add the words "Go Blue" to the final div.  
+        // Each occurrence should be on a separate line.  Don't use 
+        // paragraphs. 
+        function copyFunction() {
+            document.querySelector('#cheer').innerHTML += "<br>Go Blue\n" ;
+        }
+        
+    </script>*/-->
+
+    <title>Pets</title>
+</head>
+<body onload="displayInformation();">
+    <header>
+        <a tabindex="0" class="skip-to-content-link" href="#main">Skip to Main Content</a> 
+        <h1 class="pets-title">PETS</h1>
+        <nav>
+            <ul class="navigation">
+                <li class="nav-button"><a tabindex="0" href="index.html">Home</a></li>
+                <li class="nav-button pets-nav active"><a tabindex="0" href="pets.html">Pets</a></li>
+                <li class="dropdown pets-dropdown">
+                    <a tabindex=0" href="pets.html">Bacon</a>
+                    <a tabindex="0" href="#fitz">Fitz</a>
+                    <a tabindex="0" href="#cody">Cody</a>
+                </li>
+                <li class="nav-button recipes-nav"><a tabindex="0" href="recipes.html">Recipes</a></li>
+                <li class="dropdown recipes-dropdown">
+                    <a tabindex="0" href="recipes.html">Double Chocolate Cookies</a>
+                    <a tabindex="0" href="recipes.html#bread">Chocolate Chip Banana Bread</a>
+                    <a tabindex="0" href="recipes.html#guacamole">Guacamole</a>
+                    <a tabindex="0" href="recipes.html#zucchini">Zucchini Fritters</a>
+                    <a tabindex="0" href="recipes.html#sandwich">BLAT Sandwich</a>
+                </li>
+                <li class="nav-button travel-nav"><a tabindex="0" href="travel.html">Travel</a></li>
+                <li class="dropdown travel-dropdown">
+                    <a tabindex="0" href="travel.html">Shanghai</a>
+                    <a tabindex="0" href="travel.html#falls">Niagara Falls</a>
+                    <a tabindex="0" href="travel.html#chiangmai">Chiangmai, Thailand</a>
+                </li>
+            </ul>
+        </nav>
+
+    </header>
+    <main class="main" id="main">
+        <!--<div>
+            <h2>Use JavaScript to display the following information here:</h2>
+	        <p>
+                The URL of this page is: <span id = "URL"></span><br/>
+                The number of H2 items for this page: <span id = "items"></span><br/>
+                The current date/time is: <span id = "time"></span><br/>
+            </p>
+
+		    <p oncopy="copyFunction()">Thank you for visiting!</p>
+
+	        
+            <div id="cheer"></div>
+        </div>-->
+
+        <h2 id="bacon">Bacon Q Dog</h2>
+        <div class="bacon-whole">
+            <h3 class="creator">Created by Colleen van Lent</h3>
+
+            <div class="bacon">
+                <img class="bacon-pic pet-profile" src="images/bacon.jpg" alt="Brown labradoodle wearing colorful lei.">
+                <div class="bacon-p">
+                    <p>Bacon Q. Dog is a 9yr old labradoodle. He prefers to spend his days lounging among the three different beds/couches that his family has gifted him. He enjoys a walk or two around the neighborhood, as long as he can pretend that he doesn't see any of the other animals to avoid the embarrassment of not wanting to admit he has no wolf-like skills in chasing them.</p> 
+                    <p>At night just as the rest of the family is ready to relax, Bacon suddenly wants to release all of his energy. He will place his toys on a mini couch and frantically drag the couch around, giving his toys "a ride." There is also a lot of rolling. Lots and lots of rolling.</p>
+                </div>
+            </div>
+
+            <h3>Photo Gallery</h3>
+            <div class="bacon-photos">
+                <img tabindex="-1" class="bacon-items clickable-pets" src="images/bacon_bandana.JPG" alt="Brown labradoodle wearing an orange bandana.">
+                <img tabindex="-1" class="bacon-items clickable-pets" src="images/bacon_graduation.JPG" alt="Small labradoodle puppy wearing a graduation cap and gown.">
+                <video tabindex="0" class="bacon-items" controls>
+                    <source src="images/bacon_agility.mov">
+                    Your browser does not support the video tag. This was a video of a girl and dog demonstrating a sit and stay procedure.
+                </video>
+                <img tabindex="-1" class="bacon-items clickable-pets" src="images/bacon_halloween.JPG" alt="Brown labradoodle wearing a pirate costume.">
+            </div>
+            
+            <h3>Likes</h3>
+            <ul class="likes">
+                <li>Belly rubs</li>
+                <li>Playing tug-of-war</li>
+                <li>Sneaking onto the couch</li>
+            </ul>
+
+        </div>
+
+        <h2 id="fitz">Fitz</h2>
+        <div class="fitz-whole">
+            <h3 class="creator">Created by Kay Malan and Anna Vento</h3>
+
+            <div class="fitz">
+                <img class="fitz-pic pet-profile" src="images/Fitz.jpeg" alt="Boston terrier watching a tennis ball at the table.">
+                <div class="fitz-p">
+                    <p>Loves chasings tennis balls, chipmunks, squirrels, and birds. Often found sitting by the fire in wintertime, and in sun patches when available. He's energetic, mischievous, and easily bored. He loves people and gets grumpy if left without a lap too long.</p> 
+                    <p>Loves barking up trees, running around on the lawn, and digging in the dirt looking for moles. He especially likes getting treats and whines when he comes inside and doesn't get a snack.</p>
+                </div>
+            </div>
+
+            <h3>Photo Gallery</h3>
+            <div class="fitz-photos">
+                <img tabindex="-1" class="fitz-items clickable-pets" src="images/Fitz_standing_on_chair.jpeg" alt="Fitz standing on a wooden chair, looking at the camera.">
+
+                <img tabindex="-1" class="fitz-items clickable-pets" src="images/Fitz_sleeping.jpeg" alt="Fitz sleeping in a fuzzy dog bed.">
+
+                <img tabindex="-1" class="fitz-items clickable-pets" src="images/Fitz_on_the_lawn.jpeg" alt="Fitz laying out on the lawn in the grass.">
+
+                <img tabindex="-1" class="fitz-items clickable-pets" src="images/Fitz_laying_in_bed.jpeg" alt="Fitz sleeping with his face buried in a plaid blanket, only his head is visible.">
+            </div>
+
+            <h3>Likes</h3>
+            <ul class="likes">
+                <li>Blankets</li>
+                <li>Being warm</li>
+                <li>Barking</li>
+            </ul>
+
+
+        </div>
+
+        <h2 id="cody">Cody</h2>
+        <div class="cody-whole">
+            <h3 class="creator">Created by Yuqing Zhang</h3>
+
+            <div class="cody">
+                <img class="cody-pic pet-profile" src="images/cody.jpg" width="400" alt="Cody at home.">
+                <div class="cody-p">
+                    <p>Cody is a 7yr old Pembroke Corgi. He was born in Cavalier Farms, Seattle. He prefers to spend his days lounging on the bean bag. Every day, he enjoys two walks around the neighborhood and likes to make friends with other doggie friends. If lucky enough, he might see the cyclist, but he is not allowed to give chase.</p> 
+                    <p>Cody loves traveling. He enjoys walking on the beach and taking sun naps. But he hates cold weather. He would like to stay at home lounging by the fireplace in winter.</p>
+                </div>
+            </div>
+
+            <h3>Photo Gallery</h3>
+            <div class="cody-photos">
+                <img tabindex="-1" class="cody-items clickable-pets" src="images/cody_play.jpg" alt="Cody lying on the ground making faces.">
+
+                <img tabindex="-1" class="cody-items clickable-pets" src="images/cody_deathvalley.jpg" alt="Cody visiting Badwater Basin in Death Valley National Park.">
+
+                <img tabindex="-1" class="cody-items clickable-pets" src="images/cody_sea.jpg" alt="Cody having a walk by the sea.">
+
+                <img tabindex="-1" class="cody-items clickable-pets" src="images/cody_fireplace.jpg" alt="Cody lounging by the fireplace in winter.">
+            </div>
+
+            <h3>Likes</h3>
+            <ul class="likes">
+                <li>Traveling</li>
+                <li>Lounging</li>
+                <li>Tennis balls</li>
+            </ul>
+        </div>
+
+        <div id="slider">
+            <button class="close-slider">&times;</button>
+            <button class="prev-button">&lt;</button>
+            <button class="next-button">&gt;</button>
+        </div>
+    </main>
+    
+</body>
+</html>

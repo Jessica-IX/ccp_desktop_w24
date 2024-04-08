@@ -1,0 +1,674 @@
+* {
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+main {
+    margin: 20px;
+}
+.index-main {
+    position: relative;
+    height: 80%;
+    z-index: -1;
+}
+
+.index-p {
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    text-align: center;
+    line-height: 2;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 80%;
+}
+
+a:not(.recipes-link) {
+    color: white;
+    text-decoration: none;
+    font-family: "Arial Black", "Gill Sans", Arial, sans-serif;
+}
+
+a.recipes-link {
+    color: rgb(2, 2, 255);
+}
+
+.dropdown a {
+    font-family: "Gill Sans", Times, Arial;
+    font-weight: bold;
+    border-top: 5px solid white;
+    font-size: 0.8rem;
+    padding: 15px 3px;
+    background-color: rgba(0, 0, 0, 0.7);
+    font-size: 1.2rem;
+}
+
+.nav-button a {
+    font-weight: bolder;
+}
+
+
+a.skip-to-content-link {
+    position: absolute; 
+    top: -50px;
+    color:black;
+}
+
+a.skip-to-content-link:focus {
+    padding: 10px;
+    display: block;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    top: 0;
+} 
+
+ul.navigation {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 0.2rem;
+}
+
+li.nav-button {
+    background-color: black;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+li.active {
+    background-color: white;
+    border-top: 4px solid black;
+    border-bottom: 4px solid black;
+    border-radius: 30%;
+    font-family: "Arial Black",  "Gill Sans", Arial, sans-serif;
+    font-weight: bolder;
+}
+
+li.active a{
+    color: black;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+li {
+    font-family: "Gill Sans", 'Times New Roman', serif ;
+    line-height: 1.5;
+}
+
+ul:not(.navigation) {
+    list-style-type: disc;
+    margin-left: 20px;
+    list-style-position: inside;
+}
+
+ol {
+    list-style-type: decimal;
+    margin-left: 20px;
+}
+
+h1 {
+    margin: 5px;
+    font-family: "Arial Black", "Gill Sans", Arial, sans-serif;
+    font-style: italic;
+    font-size: 1.7rem;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    color:  black;
+}
+
+.homepage-title,
+.pets-title,
+.recipes-title,
+.travel-title {
+    margin: 0;
+    padding: 15px;
+}
+
+.bacon-whole,
+.fitz-whole,
+.cody-whole,
+.cookies-whole,
+.bread-whole,
+.guacamole-whole,
+.zucchini-whole,
+.sandwich-whole,
+.shanghai-whole,
+.falls-whole,
+.chiangmai-whole
+ {
+    padding: 10px;
+    margin: 0 0 20px 0;
+}
+
+.fitz-whole,
+.bread-whole,
+.falls-whole {
+    background-color: rgb(213, 252, 220);
+}
+
+.bacon-whole,
+.cookies-whole,
+.shanghai-whole {
+    background-color: rgba(178, 249, 249, 0.711);
+}
+
+.cody-whole,
+.guacamole-whole,
+.chiangmai-whole {
+    background-color: rgb(252, 235, 183);
+}
+
+.homepage-title,
+.pets-title,
+.recipes-title,
+.travel-title,
+.index-main,
+.zucchini-whole {
+    background-color: rgb(240, 225, 251);
+}
+.sandwich-whole {
+    background-color: rgb(255, 201, 201);
+}
+
+h2 {
+    font-size: 1.3rem;
+    text-align: center;
+    padding: 5px;
+    font-family: "Arial Black", "Gill Sans", Arial, sans-serif;
+    color: white;
+    background-color: black;
+    font-weight: bold;
+}
+
+h3 {
+    font-family: "Gill Sans", Times, Arial;
+    font-size: 1.2rem;
+    padding: 10px;
+    display: inline-block;
+}
+
+h3:not(.creator) {
+    font-weight: bold;
+}
+
+p, figcaption {
+    line-height: 1.5;
+    padding: 5px;
+}
+
+p {
+    font-family: "Gill Sans", Times, Arial;
+}
+
+.creator {
+    font-style: italic;
+}
+
+.dropdown {
+    display: none;
+    text-align: center;
+}
+
+.bacon-photos,
+.fitz-photos,
+.cody-photos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.bread-photos,
+.guacamole-photos,
+.cookie-photos,
+.zucchini-photos,
+.sandwich-photos {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.shanghai-photos1,
+.shanghai-photos2,
+.falls-photos1,
+.falls-photos2,
+.thailand-photos1,
+.thailand-photos2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: space-between;
+}
+
+img, video {
+    width: 90%;
+    height: auto;
+    display: block;
+    margin: 10px auto;
+    border-top: 15px solid white;
+    border-bottom: 15px solid white;
+    object-fit: cover;
+}
+
+.pet-profile,
+.recipes-profile,
+.travel-profile {
+    border-radius: 10%;
+}
+
+.pet-profile {
+    height:380px;
+}
+
+.cookie-items,
+.bread-items,
+.guacamole-items,
+.zucchini-items,
+.sandwich-items {
+    max-width: 45%;
+}
+
+#slider {
+    display: none;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 60%;
+    height: 70%;
+    background-color: rgb(255, 255, 255, 0.8);
+}
+
+#slider img {
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%) scale(0.7);
+    width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    border: none;
+}
+
+
+button:focus {
+    border: 8px solid rgb(0, 0, 0);
+    border-radius: 15%;
+    background-color: transparent;
+    color: black;
+}
+
+.close-slider,
+.prev-button,
+.next-button {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.7);
+    border: none;
+    font-size: 50px;
+    margin: 10px;
+    color: white;
+
+}
+
+.close-slider {
+    top: 10px;
+    right: 10px;
+}
+
+.prev-button,
+.next-button {
+    top: 50%; 
+    transform: translateY(-50%);
+    height: 30%;
+}
+
+.prev-button {
+    left: 10px;
+}
+
+.next-button {
+    right: 10px;
+}
+
+@media (prefers-reduced-motion) {
+    .gif {
+        display: none;
+      }
+}
+
+/*iPad min & iPad*/
+@media screen and (min-width: 700px) {
+    ul.navigation {
+        position: absolute;
+        left: 0;
+        right: 0;
+    }
+    .main {
+        margin-top: 90px;
+    }
+    li {
+        font-size: 1.5rem;
+    }
+
+    p, li:not(.nav-button), figcaption {
+        margin-left: 20px;
+        margin-right: 15px;
+        font-size: 1.2rem;
+    }
+    
+    h1 {
+        font-size: 3rem;
+    }
+    h2 {
+        font-size: 1.7rem;
+        margin: 0 10px;
+    }
+    h3 {
+        font-size: 1.5rem;
+    }
+
+    .bacon-whole,
+    .fitz-whole,
+    .cody-whole,
+    .cookies-whole,
+    .bread-whole,
+    .guacamole-whole,
+    .zucchini-whole,
+    .sandwich-whole,
+    .shanghai-whole,
+    .falls-whole,
+    .chiangmai-whole
+    {
+        margin: 0 10px 30px 10px;
+    }
+    .pet-profile {
+        height:26rem;
+        width: auto;
+        max-width: 90%;
+    }
+
+    .recipes-profile {
+        width: 30rem;
+    }
+
+    .bacon,
+    .fitz,
+    .cody {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+    }
+
+    .bacon-p,
+    .fitz-p,
+    .cody-p {
+        margin-left: 0;
+    }
+
+    .bacon-photos,
+    .fitz-photos,
+    .cody-photos {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    .shanghai-photos1,
+    .shanghai-photos2,
+    .falls-photos1,
+    .thailand-photos1,
+    .thailand-photos2 {
+        grid-template-columns: 1fr 1fr;
+        align-items: stretch;
+    }
+    .middle-grid {
+        grid-column: 1 / -1;
+    }
+    .two-rows {
+        grid-row: 2 / 4;
+    }
+
+    .falls-photos2 {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+    }
+
+    .falls-photos2 figure{
+        max-width: 50%;
+    }
+
+    .shanghai-photos2 figure img,
+    .falls-photos2 figure img {
+        height: 250px;
+        width: 320px;
+    }
+
+    .bread-items,
+    .guacamole-items {
+        max-width: 30%;
+    }
+
+    .fitz-items,
+    .bacon-items,
+    .cody-items {
+        height: 20rem;
+    }
+
+    .cookie-procedure,
+    .bread-procedure,
+    .guacamole-procedure,
+    .zucchini-procedure,
+    .sandwich-procedure {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: space-evenly;
+    }
+
+    .cookie-ingredients,
+    .bread-ingredients,
+    .guacamole-ingredients,
+    .zucchini-ingredients,
+    .sandwich-ingredients {
+        margin-left: 0;
+    }
+
+    .cookie-steps,
+    .bread-steps,
+    .guacamole-steps,
+    .zucchini-steps,
+    .sandwich-steps {
+        margin-right: 30px;
+    }
+
+}
+
+/*laptop*/
+@media screen and (min-width: 1000px) {
+    .likes {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .likes li {
+        list-style-type: none;
+    }
+
+    .likes li::before {
+        content: "\2764";
+        color:rgb(217, 0, 0);
+        margin-right: 10px;
+        font-size: 1.75rem;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+
+    }
+
+    .bacon-p,
+    .fitz-p,
+    .cody-p {
+        margin-right: 30px;
+    }
+
+    .fitz-pic,
+    .cody-pic {
+        width: 80%;
+    }
+
+    .cookie-ingredients,
+    .bread-ingredients,
+    .guacamole-ingredients,
+    .zucchini-ingredients,
+    .sandwich-ingredients {
+        margin-left: 2rem;
+    }
+
+    .cookie-photos,
+    .zucchini-photos,
+    .sandwich-photos {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    
+    .cookie-items,
+    .zucchini-items,
+    .sandwich-items {
+        height: 90%;
+        max-width: 80%;
+
+    }
+
+    img.bread-items,
+    img.guacamole-items {
+        width: 20%;
+    }
+
+    .travel-profile {
+        width: 70%;
+    }
+
+    .shanghai-photos2 figure img:not(.wukang img) {
+        width: 60%;
+        max-height: 60%;
+    }
+
+    figure.wukang img {
+        width: 40%;
+        max-height: 70%;
+    }
+
+    .thailand-photos2 {
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-content: space-between;
+        width: 100%
+    }
+    .two-rows {
+        grid-column-start: 3;
+        grid-row-start: 1;
+    }
+
+    .two-rows img {
+        height: 85%;
+    }
+
+    img:focus {
+        outline: 3px solid blue;
+    }
+}
+
+
+@media screen and (min-width: 1280px) {
+    .recipes-intro {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .recipes-intro img,
+    .recipes-intro div {
+        flex-grow: 1;
+    }
+
+    .recipes-p {
+        line-height: 2;
+        margin: 2rem;
+    }
+
+    .recipes-profile {
+        width: 30%;
+        margin-left:4rem;
+        margin-right: 1.5rem;
+
+        height: 100%;
+    }
+
+    .bread-pic,
+    .zucchini-pic {
+        order: 2;
+        margin-right:4rem;
+    }
+
+    .cookie-ingredients,
+    .bread-ingredients,
+    .guacamole-ingredients,
+    .zucchini-ingredients,
+    .sandwich-ingredients {
+        margin-left: 1.5rem;
+    }
+
+    .bread-pic {
+        height: 70%;
+    } 
+
+    .cody-pic {
+        object-position: center 30%;
+    }
+
+    .bacon-items:nth-of-type(1) {
+        object-position: center 25%;
+    }
+
+    .bacon-items:nth-of-type(2) {
+        object-position: bottom;
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    .shanghai-photos2 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .shanghai-photos2 figure:not(:last-child):not(:nth-last-child(2)) {
+        flex-basis: 33%;
+    }
+
+    .shanghai-photos2 figure:last-child,
+    .shanghai-photos2 figure:nth-last-child(2) {
+        flex-basis: 40%;
+    }
+
+    p, figcaption, 
+    li:not(.nav-button),
+    .dropdown a {
+        font-size: 1.75rem;
+    }
+
+    h1 {
+        font-size: 3.5rem;
+    }
+
+    h2 {
+        font-size: 3rem;
+    }
+
+    h3, .nav-button a {
+        font-size: 2rem;
+    }
+
+}
