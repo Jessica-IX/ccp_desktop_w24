@@ -313,7 +313,6 @@ button:focus {
     font-size: 50px;
     margin: 10px;
     color: white;
-
 }
 
 .close-slider {
@@ -326,7 +325,7 @@ button:focus {
     top: 50%; 
     transform: translateY(-50%);
     height: 30%;
-    width: 5%;
+    max-width: 8%;
 }
 
 .prev-button {
