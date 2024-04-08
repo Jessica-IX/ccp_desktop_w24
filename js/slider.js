@@ -32,6 +32,7 @@ if (window.innerWidth >= 1000) {
 
         clickable.forEach(function(item) {
             item.addEventListener('click', function(event) {
+                focusedImg = item;
                 addImage(item);
             });
 
@@ -124,7 +125,6 @@ if (window.innerWidth >= 1000) {
 
         closeButton.addEventListener('click', function() {
             slider.style.display = 'none';
-            wasClicked = true;
         });
 
         prevButton.addEventListener('focus', function(event) {
@@ -135,6 +135,7 @@ if (window.innerWidth >= 1000) {
         });
 
         closeButton.addEventListener('focus', function(event) {
+            wasClicked = true;
             event.preventDefault();
         });
 
